@@ -17,9 +17,13 @@ int main(int argc, const char * argv[]) {
         NSDate *yesterday = [now dateByAddingTimeInterval:-24 * 60 * 60];
         
         // Create and Array with all three dates
-        
         NSArray *dateList = @[now, tomorrow, yesterday];
         
+        
+        // iterate over the array
+        for(NSDate *d in dateList) {
+            NSLog(@"Here is a date: %@", d);
+        }
         
         NSLog(@"Hello, World!");
     }
